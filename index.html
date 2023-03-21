@@ -11,11 +11,14 @@
 
 <body>
     <div class="title">
+        <!-- アプリタイトル -->
         <h1>メモアプリ</h1>
     </div>
 
     <div class="contents">
+        <!-- アプリコンテンツ -->
         <div class="list">
+            <!-- メモ一覧画面 -->
             <ol id="list">
                 <!-- ここのタグのhtml要素を書き換えることでメモを追加・削除する -->
                 <input type="button" name="load" id="load" class="load" value="ロード" onclick="load(0);">
@@ -24,6 +27,7 @@
         </div>
         
         <div class="editor">
+            <!-- メモ編集画面 -->
             <div class="object">
                 <input type="text" name="memo_title" id="title" value="" class="object_common">
                 <textarea name="memo_text" id="text" rows="10" class="object_common"></textarea>
