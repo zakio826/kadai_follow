@@ -59,6 +59,7 @@ button {
     border-style: none;
     background-color: white;
     margin-right: 6%;
+    margin-left: 2px;
 }
 .list ol li input {
     width: 100%;
