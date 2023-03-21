@@ -15,24 +15,23 @@
 
     <div class="contents">
         <div class="list">
-            <!-- この下のタグのhtml要素を書き換えることでメモを追加・削除する -->
             <ol id="list">
-                <li><button name="memo_title" id="0" class="ol_common" onclick="load(0);">メモ 1</button></li><br>
-                <li><input type="text" name="memo_title" id="new" value="新規メモ" class="ol_common"></li>
+                <!-- ここのタグのhtml要素を書き換えることでメモを追加・削除する -->
+                <input type="button" name="load" id="load" class="load" value="ロード" onclick="load(0);">
             </ol>
-            <button id="create" class="create" onclick="create();">追加</button>
+            <span id="btn_create"><!-- <button id="create" class="create" onclick="create();">追加</button> --></span>
         </div>
         
         <div class="editor">
             <div class="object">
-                <input type="text" name="memo_title" id="title" value="メモ 1" class="object_common">
+                <input type="text" name="memo_title" id="title" value="" class="object_common">
                 <textarea name="memo_text" id="text" rows="10" class="object_common"></textarea>
                 <input type="hidden" name="memo_id" id="id" value="0">
             </div>
             
-            <button id="save" class="" onclick="save();">保存</button>
+            <span id="btn_save"><!-- <button id="save" class="save" onclick="save();">保存</button> --></span>
             <span id="btn_del"><!-- <button id="del" class="del" onclick="del();">削除</button> --></span>
-            <button id="reset" class="reset" onclick="reset(); load(0);">リセット</button>
+            <button id="reset" class="reset" onclick="reset(); load(0);">初期化</button>
         </div>
     </div>
 
