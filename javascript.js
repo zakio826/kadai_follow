@@ -33,6 +33,7 @@ const btn_save = '<button id="save" class="" onclick="save();">保存</button>';
 const btn_del = '<button id="del" class="del" onclick="del();">削除</button>';
 
 
+
 /* 関数定義 */
 
 // メモアプリの初期化
