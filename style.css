@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* テキストのフォントと枠線の設定 */
+button, input, textarea, li, h1 {
+    font-family: sans-serif;
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+/* ボタンの一部サイズを追加設定 */
+button {
+    font-size: 24px; /* フォントサイズ */
+    height: 70px;    /* ボタンの高さ */
+}
+
+/* タイトル */
+.title {
+    width: 100%;
+    margin: 0.6rem 0;
+}
+.title h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* コンテンツ */
+.contents {
+    position: static;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+/* メモリスト */
+.list {
+    position: relative;
+    float: left;
+    width: 36%;
+}
+.list ol {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-bottom: -3rem;
+}
+.list li {
+    font-size: 30px;
+    margin: 0;
+    height: 54px;
+}
+.list .ol_common {
+    position: relative;
+    font-size: 36px;
+    text-align: left;
+}
+.list ol li button {
+    width: 150%;
+    border-style: none;
+    background-color: white;
+    margin-right: 6%;
+}
+.list ol li input {
+    width: 100%;
+    bottom: 0;
+    padding: 6px;
+}
+.list .create {
+    position: absolute;
+    bottom: -16px;
+    font-size: 24px;
+    width: 80px;
+    height: 70px;
+    margin-bottom: 0;
+    margin-left: 24px;
+}
+
+/* メモエディタ */
+.editor {
+    float: right;
+    width: 64%;
+}
+.object {
+    padding-right: 1.2rem;
+    margin-right: 4px;
+}
+.object_common {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 8px;
+}
+.object input {
+    font-size: 36px;
+    font-weight: bold;
+}
+.object textarea {
+    font-size: 30px;
+}
+.editor button {
+    width: 120px;
+}
+.editor .del {
+    margin-left: 10px;
+}
+.editor .reset {
+    float: right;
+}
