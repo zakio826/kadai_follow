@@ -10,7 +10,7 @@ button, input, textarea, li, h1 {
 /* ボタンの一部サイズを追加設定 */
 button {
     font-size: 24px; /* フォントサイズ */
-    height: 70px;    /* ボタンの高さ */
+    height: 70px; /* ボタンの高さ */
 }
 
 /* タイトル */
@@ -25,7 +25,7 @@ button {
 
 /* コンテンツ */
 .contents {
-    position: static;
+    position: relative;
     width: 80%;
     height: auto;
     margin: auto;
@@ -33,13 +33,12 @@ button {
 }
 
 /* メモリスト */
-.list {
-    position: relative;
-    float: left;
+.contents .list {
+    position: absolute;
+    left: 0;
     width: 36%;
 }
 .list ol {
-    position: relative;
     float: left;
     width: 50%;
     margin: 0;
@@ -66,6 +65,15 @@ button {
     bottom: 0;
     padding: 6px;
 }
+.list .load {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    width: 80%;
+    height: 150px;
+    top: 150px;
+    right: 20%;
+}
 .list .create {
     position: absolute;
     bottom: -16px;
@@ -77,8 +85,9 @@ button {
 }
 
 /* メモエディタ */
-.editor {
-    float: right;
+.contents .editor {
+    position: absolute;
+    right: 0;
     width: 64%;
 }
 .object {
